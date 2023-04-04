@@ -11,10 +11,10 @@ const Home = () => {
     dispatch(fetchData());
   }, [dispatch]);
 
-  if(loading) {
-    return <h1 style={{textAlign:'center'}}> Loading....</h1>;
- }
-  if(error) {
+  if (loading) {
+    return <h1 style={{ textAlign: "center" }}> Loading....</h1>;
+  }
+  if (error) {
     return <h1>Error: {error}</h1>;
   }
 
@@ -35,7 +35,8 @@ const Home = () => {
               <div className="card">
                 <img
                   src={`https://picsum.photos/200?random=${item.id}`}
-                  alt={item.title}/>
+                  alt={item.title}
+                />
                 <div className="content">
                   <h4>User ID : {item.userId}</h4>
                   <h4>Title : {item.title.slice(0, 20)}...</h4>

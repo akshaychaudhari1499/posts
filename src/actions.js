@@ -26,7 +26,7 @@ export const fetchData = () => {
   return async (dispatch) => {
     dispatch(fetchDataRequest());
     try {
-         const response = await fetch(
+      const response = await fetch(
         "https://jsonplaceholder.typicode.com/posts"
       );
 

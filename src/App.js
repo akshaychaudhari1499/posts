@@ -4,7 +4,11 @@ import Home from "./Components/Home";
 import Detail from "./Components/Details";
 import { legacy_createStore as createStore, applyMiddleware } from "redux";
 import thunk from "redux-thunk";
-import {FETCH_DATA_REQUEST ,FETCH_DATA_SUCCESS,FETCH_DATA_FAILURE} from './actions'
+import {
+  FETCH_DATA_REQUEST,
+  FETCH_DATA_SUCCESS,
+  FETCH_DATA_FAILURE,
+} from "./actions";
 const initialState = {
   loading: false,
   data: [],
